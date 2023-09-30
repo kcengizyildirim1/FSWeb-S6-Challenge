@@ -1,0 +1,54 @@
+/* CSS */
+.accordion {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header:hover {
+  background-color: grey;
+}
+
+.accordion-body {
+  padding: 20px;
+  background-color: #fff;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+
+.accordion.open .Body {
+  max-height: 1000px; /* Açıldığında maksimum yükseklik */
+}
+
+.accordion h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.accordion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion li {
+  margin-bottom: 5px;
+}
+
+.accordion li:last-child {
+  margin-bottom: 0;
+}
+
